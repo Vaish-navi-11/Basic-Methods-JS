@@ -162,3 +162,36 @@ let searchNum=2;
 let index = arr19.indexOf(searchNum);
 document.write("<br>Index of First Occurrence of "+searchNum+": ",index);
 ///////////////////////////////////////////////////////////////////////
+
+//21. Array of objects sorting
+let arr20 = [
+  {name: "John", age: 30},
+  {name: "Alice", age: 25},
+  {name: "Bob", age: 28}
+];
+arr20.sort((a, b) => a.age - b.age);
+for (let i of arr20){
+  document.write("<br>"+i.name+" - "+i.age);
+}
+/////////////////////////////////////////////////////////////////////////
+
+//22. Creating new array with a given length
+let length = 5;
+let newArray = Array.from({length}, () => Math.floor(Math.random() * 100));
+document.write("<br>New Array with Random Numbers: ",newArray);
+/////////////////////////////////////////////////////////////////////////
+
+//23. Finding intersection of two arrays
+
+let arr21 = [1, 2, 3, 4, 5];
+let arr22 = [4, 5, 6, 7, 8];
+let intersect = arr21.filter(value => arr22.includes(value));
+document.write("<br>Intersection of Two Arrays: ",intersect);
+//////////////////////////////////////////////////////////////////////////
+
+//24. Grouping two arrays
+let arr23 = [1, 2, 3, 4, 5];
+let arr24 = ["a", "b", "c", "d", "e"];
+let grouped = 
+document.write("<br>Grouped Array: ",grouped);
+/////////////////////////////////////////////////////////////////////////
